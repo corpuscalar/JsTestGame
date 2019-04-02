@@ -1,0 +1,185 @@
+.navbar{
+    background: rgba(0, 0, 40, 0.80);
+    position: relative;
+}
+.nav-link , .navbar-brand{
+    color: #f4f4f4;
+    cursor: pointer;
+}
+.nav-link{
+    margin-right: 1em !important;
+}
+
+.nav-link:hover{
+     background: #f4f4f4;
+     color: darkblue;
+ }
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-toggler{
+    background:#fff !important;
+}
+
+.navbar-text {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-right: 20em;
+}
+.header{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar-brand:hover {
+
+    color: #ddd;
+}
+
+.description{
+    position: absolute;
+    top: 10%;
+    margin: auto;
+    padding: 2em;
+    
+}
+.description h1{
+    color:#F97300 ;
+}
+.description p{
+    color:#666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+.description button{
+    border:1px  solid #F97300;
+    background:#F97300;
+    color:#fff;
+}
+
+.transparent-square {
+    background: rgba(255, 0, 0, 0);
+    clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+}
+.circle {
+    background: rgba(200, 200, 200, 1);
+    clip-path: circle(50% at 50% 50%);
+}
+.circle:hover {
+    background: rgba(255, 255, 255, 1);
+}
+.square{
+    background: rgba(200, 200, 200, 1);
+    clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+}
+.square:hover {
+     background: rgba(255, 255, 255, 1);
+}
+
+.diamond {
+    background: rgba(200, 200, 200, 1);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+.diamond:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.triangle {
+    background: rgba(200, 200, 200, 1);
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+.triangle:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+#dialog {
+    width: 40%;
+    position: relative;
+    display: none;
+}
+
+.input-group-text {
+    text-align: left;
+    width: 100%;
+}
+
+.text-dark {
+    margin-bottom: 1pt;
+}
+.btn-info {
+    width: 50%;
+}
+.btn-secondary {
+    width: 50%;
+}
+
+.gameZone {
+    position: relative;
+    overflow: hidden;
+    width: inherit;
+    min-height: 500px;
+    background: rgba(80, 80, 130, 0.9);
+    box-shadow: 20px 20px 10px 20px rgba(0, 0, 0, 1);
+}
+
+.blockOverlay{
+    display: flex;
+    background: rgba(255,255,255, 1);
+}
+.col-2 {
+    margin-top: 8vw;
+    min-height: 100%;
+}
+.col-10 {
+    margin-top: 8vw;
+}
+
+.form-control {
+    height: 100%;
+}
+.modal-dialog {
+    position: relative;
+    height: 66vh;
+}
+.table {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+}
+.modal-lg {
+    position: relative;
+    max-width: 70%;
+}
+
+.btn-position {
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.error-text {
+    color: red;
+    font-size: 10pt;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.regAuthForm {
+    position: relative;
+    width: 50%;
+    margin-top: 10vh;
+    margin-left: 25vw;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/lodash.js"></script>
+        <script type="text/javascript" src="siteMechanics.js"></script>
+
+        <script src="js/bootstrap.js"></script>
+
+        <script>initRegForm()</script>
+        <title>JavaScript Game by EK.</title>
+    </head>
+    <body>
+
+
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="index.html">JavaScript Game</a>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-4">
+                    <span class="navbar-text greeting" id="greeting"></span>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " id="tableScores" href="tableScore.html">Таблица очков</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="authButton" href="#" onclick="regAuthManager(1)">Вход</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" id="regButton" onclick="regAuthManager(0)">Регистрация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href ='#' onclick="exitApp()" id="exitButton" style="display: none">Выйти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="form-group regAuthForm">
+            <h2><span class="form-group" id="regAuthHeader"></span><br></h2>
+            <label>Введите имя пользователя:</label>
+            <input type="text" class="form-control" id="regAuthUsername" placeholder="Имя">
+            <label>Пароль:</label>
+            <input type="password" class="form-control" id="regAuthPassword" placeholder="Пароль">
+            <span id="errorText" class="error-text"></span>
+            <div class="form-group" style="margin-top: 2%">
+                <button onclick="getUserNamePassword()" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+
+
+</body>
+</html>

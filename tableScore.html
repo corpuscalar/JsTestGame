@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/lodash.js"></script>
+        <script type="text/javascript" src="siteMechanics.js"></script>
+
+        <script src="js/bootstrap.js"></script>
+
+        <script>initAPP(); </script>
+        <title>JavaScript Game by EK.</title>
+    </head>
+    <body>
+
+    <!--Навигация-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html">JavaScript Game</a>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <span class="navbar-text" id="greeting">Приветствуем тебя, гость!</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="tableScores" href="#">Таблица очков</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="authButton" href="regAuthForm.html" onclick="regAuthManager(1)">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="regAuthForm.html" id="regButton" onclick="regAuthManager(0)">Регистрация</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href ='#' onclick="exitFunction()" id="exitButton" style="display: none">Выйти</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+
+        <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Имя пользователя</th>
+            <th scope="col">Очки</th>
+        </tr>
+        </thead>
+
+        <tbody id = '_tableScores'>
+
+        </tbody>
+        </table>
+
+
+<script>fillTableScores();</script>
+</body>
+</html>
